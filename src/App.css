@@ -1,33 +1,43 @@
+/* Center the content */
 .App {
   text-align: center;
 }
 
+/* Scale the logo */
 .App-logo {
   height: 40vmin;
+  width: 40vmin; /* Added for better visual balance */
   pointer-events: none;
+  transition: transform 0.5s ease; /* Added for smooth scaling effect */
 }
 
+/* Apply animation only when motion is not reduced */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin 10s infinite linear; /* Adjusted animation duration for more dramatic effect */
   }
 }
 
+/* Adjust header styling */
 .App-header {
-  background-color: #282c34;
+  background-color: #969b9f; /* Changed background color for a different look */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(14px + 2vmin); /* Increased font size for better readability */
+  color: #FFD700; /* Changed font color to gold */
+  font-family: 'Arial', sans-serif; /* Changed font family */
 }
 
+/* Highlight link color */
 .App-link {
   color: #61dafb;
+  text-decoration: underline; /* Added to indicate links */
 }
 
+/* Define spinning animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
